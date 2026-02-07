@@ -29,7 +29,7 @@ AWS_SECRET = os.environ['AWS_SECRET_ACCESS_KEY']
 RECIPIENTS = [
     "trinadh5121@gmail.com",
     "keerthisetty2001@gmail.com",
-    "trinadhv@titan.co.in"
+    
 ]
 
 # The Fixed Subject Line (Script searches for this)
@@ -172,3 +172,4 @@ if __name__ == "__main__":
     rds_data = get_rds_details()
 
     send_report(rds_data)
+
