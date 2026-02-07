@@ -4,7 +4,7 @@ on:
   schedule:
     # 15:00 UTC = 20:30 IST (8:30 PM)
     # 0=Sunday, 3=Wednesday
-    - cron: '*/5 * * * *'
+    #- cron: '*/5 * * * *'
   
   # Defines a button to run manually for testing
   workflow_dispatch:
@@ -32,3 +32,4 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
         run: python main.py
+
